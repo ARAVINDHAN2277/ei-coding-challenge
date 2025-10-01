@@ -35,7 +35,7 @@ Both projects are standard Maven projects and are best run using an IDE like Int
 
 This diagram illustrates the architecture of the Virtual Classroom Manager, showcasing the use of the Facade and Factory patterns and the relationships between the key classes.
 
-![Virtual Classroom Manager Class Diagram](assets/ClassDiagram_VCM.png)
+![Virtual Classroom Manager Class Diagram](Assets/ClassDiagram_VCM.png)
 
 ---
 ## ⌨️ Commands for Exercise 2 (Virtual Classroom Manager)
