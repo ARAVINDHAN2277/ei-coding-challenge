@@ -1,4 +1,4 @@
-# Educational Initiatives - Coding Challenge Submission
+# Educational Initiatives - Coding Challenge
 
 
 ---
