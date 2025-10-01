@@ -21,7 +21,6 @@ public class Assignment {
         this.submittedByStudentIds.add(student.getId());
     }
 
-    // NEW METHOD: To get the list of submissions
     public Set<String> getSubmissions() {
         return Collections.unmodifiableSet(submittedByStudentIds);
     }

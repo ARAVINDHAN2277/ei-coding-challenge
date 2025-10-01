@@ -30,7 +30,6 @@ public class Classroom {
         return students.stream().anyMatch(s -> s.getId().equals(studentId));
     }
 
-    // Add these two methods inside your Classroom class
     public List<Student> getStudents() {
         return Collections.unmodifiableList(students);
     }

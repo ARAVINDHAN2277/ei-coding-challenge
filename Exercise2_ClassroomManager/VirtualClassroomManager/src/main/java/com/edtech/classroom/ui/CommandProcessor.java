@@ -21,7 +21,7 @@ public class CommandProcessor {
         String command = parts[0].toLowerCase();
 
         switch (command) {
-            // Existing Commands
+
             case "add_classroom":
                 if (parts.length != 2) throw new InvalidCommandException("Usage: add_classroom <ClassName>");
                 manager.addClassroom(parts[1]);
@@ -40,8 +40,6 @@ public class CommandProcessor {
                 if (submitParts.length != 4) throw new InvalidCommandException("Usage: submit_assignment <StudentId> <ClassName> <AssignmentDetails>");
                 manager.submitAssignment(submitParts[1], submitParts[2], submitParts[3]);
                 break;
-
-            // New Commands
             case "list_classrooms":
                 if (parts.length != 1) throw new InvalidCommandException("Usage: list_classrooms");
                 System.out.println("Available Classrooms: " + manager.listClassrooms());
