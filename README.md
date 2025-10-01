@@ -1,6 +1,5 @@
 # Educational Initiatives - Coding Challenge Submission
 
-This repository contains the solutions for the two coding exercises provided as part of the interview process. Both solutions are implemented in Java, built with Maven, and are structured to adhere to the provided standards, including SOLID principles, the use of design patterns, and best practices for code organization.
 
 ---
 ## 📂 Project Structure
