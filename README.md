@@ -1,8 +1,6 @@
-# ei-coding-challenge
-Coding exercises for the Educational Initiatives
 # Educational Initiatives - Coding Challenge Submission
 
-This repository contains the solutions for the two coding exercises provided as part of the interview process. Both solutions are implemented in Java, built with Maven, and are structured to adhere to the standards mentioned in the problem description, including SOLID principles, the use of design patterns, and best practices for code organization.
+This repository contains the solutions for the two coding exercises provided as part of the interview process. Both solutions are implemented in Java, built with Maven, and are structured to adhere to the provided standards, including SOLID principles, the use of design patterns, and best practices for code organization.
 
 ---
 ## 📂 Project Structure
@@ -42,7 +40,7 @@ The application accepts the following commands. Arguments that contain spaces (l
 | :-------------------------------------------------- | :------------------------------------------------- |
 | `add_classroom <ClassName>`                         | Creates a new virtual classroom.                   |
 | `add_student <StudentID> <ClassName>`               | Enrolls a student in a specific classroom.         |
-| `schedule_assignment <ClassName> <AssignmentDetails>` | Schedules a new assignment for a class.            |
+| `schedule_assignment <ClassName> <Details>`         | Schedules a new assignment for a class.            |
 | `submit_assignment <StudentID> <ClassName> <Details>` | Marks an assignment as submitted by a student.     |
 | `list_classrooms`                                   | Lists the names of all created classrooms.         |
 | `list_students <ClassName>`                         | Lists all students enrolled in a specific class.   |
@@ -54,13 +52,20 @@ The application accepts the following commands. Arguments that contain spaces (l
 ---
 ## 💡 Key Design Decisions & Features
 
--   **Design Patterns**:
-    -   **Exercise 2** is built on the **Facade Pattern** (`VirtualClassroomManager`) to provide a simple and clean interface to the system, and the **Factory Pattern** (`EntityFactory`) to decouple object creation from the main logic.
-    -   **Exercise 1** demonstrates the **Factory, Singleton, Facade, Adapter, Strategy,** and **Command** patterns to showcase a broad understanding of creational, structural, and behavioral patterns.
--   **SOLID Principles**: The code is structured to follow SOLID principles.
-    -   **Single Responsibility Principle (SRP)**: Classes are separated by concern (e.g., UI, business logic, data models, logging).
-    -   **Dependency Inversion Principle (DIP)**: High-level modules depend on abstractions (interfaces like `IClassroomManager` and `ILogger`) rather than concrete implementations, promoting modularity and testability.
--   **Gold Standards**:
-    -   **Logging**: A decoupled logging mechanism is included to track application events and errors.
-    -   **Exception Handling**: Custom, specific exceptions are used to handle errors gracefully without crashing the application.
-    -   **Performance**: The application uses a `HashMap` for storing and retrieving classrooms, ensuring highly efficient (O(1)) lookups.
+### Exercise 1: Design Patterns Implemented
+
+-   **Behavioural Patterns**
+    -   **COMMAND:** Encapsulates a request as an object. Demonstrated with a **Restaurant Ordering System**.
+    -   **STRATEGY:** Defines a family of algorithms and makes them interchangeable. Demonstrated with an **Image Compression Tool**.
+-   **Creational Patterns**
+    -   **FACTORY:** Creates objects without exposing creation logic. Demonstrated with a **Document Converter**.
+    -   **SINGLETON:** Ensures a class has only one instance. Demonstrated with a **Game Settings Manager**.
+-   **Structural Patterns**
+    -   **FACADE:** Provides a simplified interface to a complex subsystem. Demonstrated with a **Smart Home Control Panel**.
+    -   **ADAPTER:** Makes incompatible interfaces work together. Demonstrated with a **Social Media Sharing Integration**.
+
+### Exercise 2: Architecture and Principles
+
+-   The application is built on the **Facade Pattern** (`VirtualClassroomManager`) to provide a simple and clean interface to the system, and the **Factory Pattern** (`EntityFactory`) to decouple object creation.
+-   The code is structured to follow **SOLID principles**, particularly the Single Responsibility Principle and the Dependency Inversion Principle.
+-   **Gold Standard** features like a decoupled logging mechanism, custom exception handling, and performance optimization (using `HashMap`) are included as per the requirements.
