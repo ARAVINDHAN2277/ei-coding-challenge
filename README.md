@@ -1,5 +1,6 @@
 # Educational Initiatives - Coding Challenge Submission
 
+This repository contains the solutions for the two coding exercises provided as part of the interview process. Both solutions are implemented in Java, built with Maven, and are structured to adhere to the provided standards, including SOLID principles, the use of design patterns, and best practices for code organization.
 
 ---
 ## 📂 Project Structure
@@ -29,6 +30,13 @@ Both projects are standard Maven projects and are best run using an IDE like Int
 4.  Navigate to the main application file: `src/main/java/com/edtech/classroom/main/Main.java`.
 5.  Right-click on the `Main.java` file and select **Run 'Main.main()'**.
 6.  The interactive terminal application will start in your IDE's run console, ready to accept commands.
+
+---
+##  UML Class Diagram (Exercise 2)
+
+This diagram illustrates the architecture of the Virtual Classroom Manager, showcasing the use of the Facade and Factory patterns and the relationships between the key classes.
+
+![Virtual Classroom Manager Class Diagram](assets/classDiagram_VCM.png)
 
 ---
 ## ⌨️ Commands for Exercise 2 (Virtual Classroom Manager)
